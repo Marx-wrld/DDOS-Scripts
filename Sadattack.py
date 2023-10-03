@@ -80,37 +80,37 @@ def referer_list():
 
 # generates a Keyword list	
 def keyword_list():
-        global keyword_top
-        keyword_top.append('HaxStroke')
-        keyword_top.append('Suicide')
-        keyword_top.append('Sex')
-        keyword_top.append('Robin Williams')
-        keyword_top.append('World Cup')
-        keyword_top.append('Ca Si Le Roi')
-        keyword_top.append('Ebola')
-        keyword_top.append('Malaysia Airlines Flight 370')
-        keyword_top.append('ALS Ice Bucket Challenge')
-        keyword_top.append('Flappy Bird')
-        keyword_top.append('Conchita Wurst')
-        keyword_top.append('ISIS')
-        keyword_top.append('Frozen')
-        keyword_top.append('014 Sochi Winter Olympics')
-        keyword_top.append('IPhone')
-        keyword_top.append('Samsung Galaxy S5')
-        keyword_top.append('Nexus 6')
-        keyword_top.append('Moto G')
-        keyword_top.append('Samsung Note 4')
-        keyword_top.append('LG G3')
-        keyword_top.append('Xbox One')
-        keyword_top.append('Apple Watch')
-        keyword_top.append('Nokia X')
-        keyword_top.append('Ipad Air')
-        keyword_top.append('Facebook')
-        keyword_top.append('Anonymous')
-        keyword_top.append('DJ Bach') 
-		headers_referers.append('http://' + host + '/')
-        return(headers_referers)
-	
+    global keyword_top
+    keyword_top.append('HaxStroke')
+    keyword_top.append('Suicide')
+    keyword_top.append('Sex')
+    keyword_top.append('Robin Williams')
+    keyword_top.append('World Cup')
+    keyword_top.append('Ca Si Le Roi')
+    keyword_top.append('Ebola')
+    keyword_top.append('Malaysia Airlines Flight 370')
+    keyword_top.append('ALS Ice Bucket Challenge')
+    keyword_top.append('Flappy Bird')
+    keyword_top.append('Conchita Wurst')
+    keyword_top.append('ISIS')
+    keyword_top.append('Frozen')
+    keyword_top.append('014 Sochi Winter Olympics')
+    keyword_top.append('IPhone')
+    keyword_top.append('Samsung Galaxy S5')
+    keyword_top.append('Nexus 6')
+    keyword_top.append('Moto G')
+    keyword_top.append('Samsung Note 4')
+    keyword_top.append('LG G3')
+    keyword_top.append('Xbox One')
+    keyword_top.append('Apple Watch')
+    keyword_top.append('Nokia X')
+    keyword_top.append('Ipad Air')
+    keyword_top.append('Facebook')
+    keyword_top.append('Anonymous')
+    keyword_top.append('DJ Bach')
+    headers_referers.append('http://' + host + '/')
+    return headers_referers
+
 #builds random ascii string
 def buildblock(size):
 	out_str = ''
@@ -182,7 +182,7 @@ def httpcall(url):
 	request.add_header('Connection', 'keep-alive')
 	request.add_header('Host',host)
 	try:
-			urllib.request.urlopen(request)
+			urllib.urlopen(request)
 	except urllib.error.HTTPError as e:
 			#print e.code
 			set_flag(1)
